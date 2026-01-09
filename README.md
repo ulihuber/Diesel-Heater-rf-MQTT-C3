@@ -7,7 +7,8 @@ Does MQTT auto-discovery in Home-Assistant and creates a device with the availab
 
 The actual code is written for an  ESP32 and configured for the cheap ESP32C3 Supermini with CC1101 RF module.
 For other boards GPIOs must be changed. 
-GPIOs (MOSI, MISO, SCK, SS, GDO02) are defined globally in platformio.ini to overwrite defaults in DieselHeaterRF.h 
+GPIOs (MOSI, MISO, SCK, SS, GDO02) are defined globally in platformio.ini to overwrite defaults in DieselHeaterRF.h.
+
 Things to adapt in Diesel-Heater-MQTT.h:
 - LED-GPIO
 - LED polarity 
