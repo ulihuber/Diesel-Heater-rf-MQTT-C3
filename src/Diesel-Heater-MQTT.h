@@ -24,7 +24,6 @@
 #include "time.h"
 
 
-
 #define LED_PIN 8
 #define LED_ON 1         // LED polarity. 1 is active-high. can be changed if LED is inverted
 
