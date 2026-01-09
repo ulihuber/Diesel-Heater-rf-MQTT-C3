@@ -42,9 +42,8 @@ typedef struct  // for table of available  wireless networks
   const char *password;
 } Networks;
 
-Networks nets[] = { { "Huber1", "wxenon131abcd" },  // table of available SSIDs
-                    { "Huber2", "wxenon131abcd" } };
-//  { "Huber3", "wxenon131abcd"}};
+Networks nets[] = { { "SSID1", "password1" },  // table of available SSIDs
+                    { "SSID2", "password2" } };
 int bestNet = 0;
 
 // Zeitzone-String für Deutschland (automatisch Sommer/Winterzeit)
@@ -57,8 +56,8 @@ const char* timeZone = "CET-1CEST,M3.5.0,M10.5.0/3";
 // MQTT
 const char *sensorname = "Heater";
 const char *mqtt_server = "homeassistant";        //"homeassistant.local";        // network address of MQTT server
-const char *mqtt_user = "uhu";         // MQTT Username here
-const char *mqtt_password = "uhu123";  // MQTT Password here
+const char *mqtt_user = "MQTT-user";         // MQTT Username here
+const char *mqtt_password = "MQTT-password";  // MQTT Password here
 WiFiClient espClient;
 PubSubClient MQTTclient(espClient);
 
